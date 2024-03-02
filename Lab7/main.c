@@ -16,17 +16,27 @@ int main(){
         }
     }
 
-    puts("Done! Your array:");
+    min = array[0][0];
+    max = array[0][0];
+
+    puts("\nDone!");
+    
     for (int i = 0; i < x; i++)
     {
-        printf("\nROW %i", i);
         for (int j = 0; j < y; j++)
         {
-            printf("\nPosition %i: %d", j, array[i][j]);
+            if (array[i][j] < min){
+                min = array[i][j];
+                minx = i;
+                miny = j;
+            }
+            if (array[i][j] > max){
+                max = array[i][j];
+                maxx = i;
+                maxy = j;
+            }
         }
     }
-}
 
-int inp(){
-
+    printf("\nMin: %d at row %i, column %i\nMax: %d at row %i, column %i", min, minx+1, miny+1, max, maxx+1, maxy+1);
 }

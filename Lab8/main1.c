@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
-int main(){
+int main() {
     char txt[30];
     char initials[10];
     int j = 2;
 
-    puts("LAB 8. TASK 2: Vyvedennya initsialiv cherez rozhlyad textu yak masyvu symvoliv");
+    puts("LAB 8. TASK 2: Vyvedennya initsialiv za dopomohoyu funktsiy biblioteky <string.h>");
     puts("Made by: Koval'chuk Anastasia, KNMS-11");
     puts("\nPlease enter your full name: ");
 
